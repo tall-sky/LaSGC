@@ -1,0 +1,16 @@
+import argparse
+import os
+import random
+import torch
+import torch.nn as nn
+import torch.nn.parallel
+import torch.backends.cudnn as cudnn
+from vgg16 import Vgg16
+from misc import *
+from torch.autograd import Variable
+from model.model1 import net
+
+net=net()
+
+def load_model(mode,dir):
+    state_dict=
